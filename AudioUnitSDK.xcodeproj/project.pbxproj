@@ -42,6 +42,18 @@
 		919B0CC62555C72000C59BDC /* AUBufferAllocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 919B0CC42555C72000C59BDC /* AUBufferAllocator.cpp */; };
 		91E93AC324E8962D00BF7289 /* Tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 91E93AC224E8962D00BF7289 /* Tests.mm */; };
 		91E93AC524E8962D00BF7289 /* libAudioUnitSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 910C29CE24D910D300B9116B /* libAudioUnitSDK.a */; };
+		9B123C5E2B05F50700403B9F /* AUInstrumentBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B123C5C2B05F50700403B9F /* AUInstrumentBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B123C5F2B05F50700403B9F /* AUInstrumentBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B123C5D2B05F50700403B9F /* AUInstrumentBase.cpp */; };
+		9B123C612B05F6F300403B9F /* LockFreeFIFO.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B123C602B05F6F300403B9F /* LockFreeFIFO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B123C632B05F99E00403B9F /* SynthEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B123C622B05F99E00403B9F /* SynthEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B123C662B05FA9800403B9F /* SynthElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B123C642B05FA9800403B9F /* SynthElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B123C672B05FA9800403B9F /* SynthElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B123C652B05FA9800403B9F /* SynthElement.cpp */; };
+		9B123C692B05FAE000403B9F /* AUMIDIDefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B123C682B05FAE000403B9F /* AUMIDIDefs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B123C6B2B05FCAF00403B9F /* MIDIControlHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B123C6A2B05FCAF00403B9F /* MIDIControlHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B123C6E2B05FD1C00403B9F /* SynthNoteList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B123C6C2B05FD1B00403B9F /* SynthNoteList.cpp */; };
+		9B123C6F2B05FD1C00403B9F /* SynthNoteList.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B123C6D2B05FD1C00403B9F /* SynthNoteList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B123C722B060F8200403B9F /* SynthNote.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B123C702B060F8200403B9F /* SynthNote.cpp */; };
+		9B123C732B060F8200403B9F /* SynthNote.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B123C712B060F8200403B9F /* SynthNote.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B49E353A29E8039C0093D6B7 /* AUConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = B49E353929E8039C0093D6B7 /* AUConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -102,6 +114,18 @@
 		91E93AC024E8962D00BF7289 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E93AC224E8962D00BF7289 /* Tests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Tests.mm; sourceTree = "<group>"; };
 		91E93AC424E8962D00BF7289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B123C5C2B05F50700403B9F /* AUInstrumentBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUInstrumentBase.h; sourceTree = "<group>"; };
+		9B123C5D2B05F50700403B9F /* AUInstrumentBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AUInstrumentBase.cpp; sourceTree = "<group>"; };
+		9B123C602B05F6F300403B9F /* LockFreeFIFO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockFreeFIFO.h; sourceTree = "<group>"; };
+		9B123C622B05F99E00403B9F /* SynthEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthEvent.h; sourceTree = "<group>"; };
+		9B123C642B05FA9800403B9F /* SynthElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthElement.h; sourceTree = "<group>"; };
+		9B123C652B05FA9800403B9F /* SynthElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SynthElement.cpp; sourceTree = "<group>"; };
+		9B123C682B05FAE000403B9F /* AUMIDIDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUMIDIDefs.h; sourceTree = "<group>"; };
+		9B123C6A2B05FCAF00403B9F /* MIDIControlHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIControlHandler.h; sourceTree = "<group>"; };
+		9B123C6C2B05FD1B00403B9F /* SynthNoteList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SynthNoteList.cpp; sourceTree = "<group>"; };
+		9B123C6D2B05FD1C00403B9F /* SynthNoteList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthNoteList.h; sourceTree = "<group>"; };
+		9B123C702B060F8200403B9F /* SynthNote.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SynthNote.cpp; sourceTree = "<group>"; };
+		9B123C712B060F8200403B9F /* SynthNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthNote.h; sourceTree = "<group>"; };
 		B49E353929E8039C0093D6B7 /* AUConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AUConfig.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -220,6 +244,10 @@
 		B48885E4282A6D6D00521D1A /* AudioUnitSDK */ = {
 			isa = PBXGroup;
 			children = (
+				9B123C702B060F8200403B9F /* SynthNote.cpp */,
+				9B123C6C2B05FD1B00403B9F /* SynthNoteList.cpp */,
+				9B123C652B05FA9800403B9F /* SynthElement.cpp */,
+				9B123C5D2B05F50700403B9F /* AUInstrumentBase.cpp */,
 				914EC76224D9181600725ABE /* AUBase.cpp */,
 				914EC77524D920CC00725ABE /* AUBuffer.cpp */,
 				919B0CC42555C72000C59BDC /* AUBufferAllocator.cpp */,
@@ -239,6 +267,14 @@
 		B4888687282AC1D800521D1A /* AudioUnitSDK */ = {
 			isa = PBXGroup;
 			children = (
+				9B123C712B060F8200403B9F /* SynthNote.h */,
+				9B123C6D2B05FD1C00403B9F /* SynthNoteList.h */,
+				9B123C6A2B05FCAF00403B9F /* MIDIControlHandler.h */,
+				9B123C682B05FAE000403B9F /* AUMIDIDefs.h */,
+				9B123C642B05FA9800403B9F /* SynthElement.h */,
+				9B123C602B05F6F300403B9F /* LockFreeFIFO.h */,
+				9B123C5C2B05F50700403B9F /* AUInstrumentBase.h */,
+				9B123C622B05F99E00403B9F /* SynthEvent.h */,
 				B49E353929E8039C0093D6B7 /* AUConfig.h */,
 				914EC76124D9181600725ABE /* AUBase.h */,
 				914EC77624D920CC00725ABE /* AUBuffer.h */,
@@ -283,6 +319,14 @@
 				643D7987292BF34C00910294 /* AUThreadSafeList.h in Headers */,
 				9100836124E05892003E57AE /* AUUtility.h in Headers */,
 				910C29D824D9115100B9116B /* ComponentBase.h in Headers */,
+				9B123C5E2B05F50700403B9F /* AUInstrumentBase.h in Headers */,
+				9B123C612B05F6F300403B9F /* LockFreeFIFO.h in Headers */,
+				9B123C662B05FA9800403B9F /* SynthElement.h in Headers */,
+				9B123C632B05F99E00403B9F /* SynthEvent.h in Headers */,
+				9B123C692B05FAE000403B9F /* AUMIDIDefs.h in Headers */,
+				9B123C6B2B05FCAF00403B9F /* MIDIControlHandler.h in Headers */,
+				9B123C6F2B05FD1C00403B9F /* SynthNoteList.h in Headers */,
+				9B123C732B060F8200403B9F /* SynthNote.h in Headers */,
 				9100836024E05892003E57AE /* MusicDeviceBase.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,7 +394,8 @@
 		910C29C624D910D300B9116B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1200;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					9100833424DF1C82003E57AE = {
 						CreatedOnToolsVersion = 12.0;
@@ -437,6 +482,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9100833024DF0F2C003E57AE /* AUBase.cpp in Sources */,
+				9B123C672B05FA9800403B9F /* SynthElement.cpp in Sources */,
 				914EC77D24D9D91A00725ABE /* AUBuffer.cpp in Sources */,
 				9100835124DF3D54003E57AE /* AUEffectBase.cpp in Sources */,
 				9100832E24DF0EB6003E57AE /* AUInputElement.cpp in Sources */,
@@ -444,8 +490,11 @@
 				9100835724DF9BAC003E57AE /* AUMIDIEffectBase.cpp in Sources */,
 				9100832F24DF0EE7003E57AE /* AUOutputElement.cpp in Sources */,
 				919B0CC62555C72000C59BDC /* AUBufferAllocator.cpp in Sources */,
+				9B123C6E2B05FD1C00403B9F /* SynthNoteList.cpp in Sources */,
+				9B123C722B060F8200403B9F /* SynthNote.cpp in Sources */,
 				914EC77424D91FFA00725ABE /* AUPlugInDispatch.cpp in Sources */,
 				914EC77E24D9DB3800725ABE /* AUScopeElement.cpp in Sources */,
+				9B123C5F2B05F50700403B9F /* AUInstrumentBase.cpp in Sources */,
 				910C29D924D9115100B9116B /* ComponentBase.cpp in Sources */,
 				9100835524DF421A003E57AE /* MusicDeviceBase.cpp in Sources */,
 			);
@@ -485,6 +534,7 @@
 				HEADER_SEARCH_PATHS = include;
 				INFOPLIST_FILE = demos/EmptyPlugIns/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.audio.EmptyPlugIns;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -502,6 +552,7 @@
 				HEADER_SEARCH_PATHS = include;
 				INFOPLIST_FILE = demos/EmptyPlugIns/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.audio.EmptyPlugIns;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -551,6 +602,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -568,11 +620,12 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LLVM_LTO = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos watchos";
 				SUPPORTS_MACCATALYST = YES;
@@ -628,6 +681,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -639,7 +693,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LLVM_LTO = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -665,6 +719,7 @@
 				EXECUTABLE_PREFIX = lib;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				HEADER_SEARCH_PATHS = include;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				OTHER_CFLAGS = "-fvisibility=hidden";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/AudioUnitSDK;
@@ -680,6 +735,7 @@
 				EXECUTABLE_PREFIX = lib;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				HEADER_SEARCH_PATHS = include;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				OTHER_CFLAGS = "-fvisibility=hidden";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/AudioUnitSDK;
@@ -699,6 +755,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.audio.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USE_HEADERMAP = NO;
@@ -720,6 +777,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.audio.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USE_HEADERMAP = NO;
