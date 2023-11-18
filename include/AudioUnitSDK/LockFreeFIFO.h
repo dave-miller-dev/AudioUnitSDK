@@ -78,6 +78,7 @@ private:
 			return NULL;
 		return &mItems[mFreeIndex];
 	}
+
 	void AdvanceFreePtr()
 	{
 		auto expected = mFreeIndex.load();
@@ -142,6 +143,7 @@ public:
 	{
 		OSAtomicCompareAndSwap32(mWriteIndex, (mWriteIndex + 1) & mMask, &mWriteIndex);
 	}
+
 	void AdvanceReadPtr()
 	{
 		OSAtomicCompareAndSwap32(mReadIndex, (mReadIndex + 1) & mMask, &mReadIndex);

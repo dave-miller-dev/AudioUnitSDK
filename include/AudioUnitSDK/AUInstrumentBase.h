@@ -64,7 +64,7 @@ public:
 	virtual OSStatus Render(AudioUnitRenderActionFlags& ioActionFlags,
 		const AudioTimeStamp& inTimeStamp, UInt32 inNumberFrames);
 
-	virtual OSStatus StartNote(MusicDeviceInstrumentID in, MusicDeviceGroupID inGroup,
+	virtual OSStatus StartNote(MusicDeviceInstrumentID inInstrument, MusicDeviceGroupID inGroup,
 		NoteInstanceID* outNoteInstance, UInt32 inOffsetSample,
 		const MusicDeviceNoteParams& inParams);
 

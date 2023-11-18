@@ -63,7 +63,6 @@ ausdk::AUScope* AUInstrumentBase::GetScopeExtended(AudioUnitScope inScope)
 void AUInstrumentBase::SetNotes(
 	UInt32 inNumNotes, UInt32 inMaxActiveNotes, SynthNote* inNotes, UInt32 inNoteDataSize)
 {
-
 	mNumNotes = inNumNotes;
 	mMaxActiveNotes = inMaxActiveNotes;
 	mNoteSize = inNoteDataSize;
@@ -282,9 +281,9 @@ bool AUInstrumentBase::StreamFormatWritable(
 }
 
 
-OSStatus AUInstrumentBase::RealTimeStartNote([[maybe_unused]] SynthGroupElement* inGroup,
-	[[maybe_unused]] NoteInstanceID inNoteInstanceID, [[maybe_unused]] UInt32 inOffsetSampleFrame,
-	[[maybe_unused]] const MusicDeviceNoteParams& inParams)
+OSStatus AUInstrumentBase::RealTimeStartNote(SynthGroupElement* inGroup,
+	NoteInstanceID inNoteInstanceID, UInt32 inOffsetSampleFrame,
+	const MusicDeviceNoteParams& inParams)
 {
 	return noErr;
 }
@@ -408,7 +407,6 @@ OSStatus AUInstrumentBase::StartNote([[maybe_unused]] MusicDeviceInstrumentID in
 OSStatus AUInstrumentBase::StopNote(
 	MusicDeviceGroupID inGroupID, NoteInstanceID inNoteInstanceID, UInt32 inOffsetSampleFrame)
 {
-
 	OSStatus err = noErr;
 
 	if (InRenderThread()) {

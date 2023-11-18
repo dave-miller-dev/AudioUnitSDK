@@ -112,7 +112,7 @@ public:
 	SynthNote* FindOldestNote()
 	{
 
-		UInt64 minStartFrame = -1;
+		UInt64 minStartFrame = 0ULL;
 		SynthNote* oldestNote = NULL;
 
 		for (SynthNote* note = mHead; note; note = note->mNext) {
@@ -130,7 +130,7 @@ public:
 	{
 
 		Float32 minAmplitude = 1e9f;
-		UInt64 minStartFrame = -1;
+		UInt64 minStartFrame = 0ULL;
 		SynthNote* mostQuietNote = NULL;
 
 		for (SynthNote* note = mHead; note; note = note->mNext) {

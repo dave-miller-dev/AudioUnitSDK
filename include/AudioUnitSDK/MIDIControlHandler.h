@@ -9,7 +9,7 @@
 #define MIDIControlHandler_h
 
 #include "AUMIDIDefs.h"
-#include "AUMidiUtility.h"
+#include "AudioUnitSDK/AUMidiUtility.h"
 
 /// Abstract interface base class for classes which handle all incoming MIDI data
 class MIDIControlHandler {

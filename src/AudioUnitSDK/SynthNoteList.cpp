@@ -11,6 +11,7 @@
 
 void SynthNoteList::SanityCheck() const
 {
+
 	if (mState >= kNoteState_Unset) {
 		throw std::runtime_error("SanityCheck: mState is bad");
 	}

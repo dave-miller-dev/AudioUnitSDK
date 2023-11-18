@@ -27,27 +27,27 @@ enum SynthNoteState {
 };
 
 /*
-		This table describes the state transitions for SynthNotes
+ This table describes the state transitions for SynthNotes
 
-		EVENT                   CURRENT STATE                                   NEW STATE
-		note on                 free                                            attacked
-		note off                attacked (and sustain on)                       released but
-   sustained note off                attacked                                        released note
-   off                sostenutoed                                     released but sostenutoed
-		sustain on              -- no changes --
-		sustain off             released but sustained                          released
-		sostenuto on            attacked                                        sostenutoed
-		sostenuto off           sostenutoed                                     attacked
-		sostenuto off           released but sostenutoed (and sustain on)       released but
-   sustained sostenuto off           released but sostenutoed                        released end of
-   note             any state                                       free soft voice stealing     any
-   state                                       fast released hard voice stealing     any state free
+ EVENT                   CURRENT STATE                                   NEW STATE
+ note on                 free                                            attacked
+ note off                attacked (and sustain on)                       released but
+ sustained note off      attacked                                        released note
+ off                     sostenutoed                                     released but sostenutoed
+ sustain on              -- no changes --
+ sustain off             released but sustained                          released
+ sostenuto on            attacked                                        sostenutoed
+ sostenuto off           sostenutoed                                     attacked
+ sostenuto off           released but sostenutoed (and sustain on)       released but
+ sustained sostenuto off released but sostenutoed                        released end of
+ note                    any state                                       free soft voice stealing
+ any state                   fast released hard voice stealing               any state free
 
-		soft voice stealing happens when there is a note on event and NumActiveNotes >
-   MaxActiveNotes hard voice stealing happens when there is a note on event and NumActiveNotes ==
-   NumNotes (no free notes) voice stealing removes the quietest note in the highest numbered state
-   that has sounding notes.
-*/
+ soft voice stealing happens when there is a note on event and NumActiveNotes >
+ MaxActiveNotes hard voice stealing happens when there is a note on event and NumActiveNotes ==
+ NumNotes (no free notes) voice stealing removes the quietest note in the highest numbered state
+ that has sounding notes.
+ */
 
 class SynthGroupElement;
 class SynthPartElement;

@@ -110,7 +110,6 @@ void SynthGroupElement::NoteOff(NoteInstanceID inNoteID, UInt32 inFrame)
 {
 
 	UInt32 noteState = kNoteState_Attacked;
-
 	SynthNote* note = GetNote(inNoteID, true, &noteState); // asking for unreleased only
 
 	if (note) {
