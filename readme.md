@@ -1,3 +1,6 @@
+# Legacy_AudioUnitSDK
+Includes legacy AUSDK helper classes from OG example projects.
+
 # AudioUnitSDK
 
 ## Overview
